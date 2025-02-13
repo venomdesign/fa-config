@@ -1,0 +1,44 @@
+[bBtn] { 
+    border-radius: 4px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: #fff; 
+    background: #005288; 
+    padding: 4px 16px; 
+    height: 40px; 
+    box-sizing: border-box; 
+    border: 1px solid transparent;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover { 
+        border-color: #005288;
+        color: #005288;
+        background: #fff;
+    }
+
+    &.success {  
+        background: #4CAF50; 
+        border-color: #4CAF50; 
+        color: #fff; 
+        &:hover { 
+            border-color: #4CAF50;
+            color: #4CAF50;
+            background: #fff;
+        }
+    }
+    &.error { 
+        background: #F44336; 
+        border-color: #F44336; 
+        color: #fff; 
+
+        &:hover { 
+            border-color: #F44336;
+            color: #F44336;
+            background: #fff;
+        }
+    }
+}
