@@ -1,8 +1,15 @@
 
 <app-example></app-example>
 
-<button bBtn [label]="'POC Button'"></button>
-<button bBtn class="success" [label]="'POC Button'"></button>
-<button bBtn class="error" [label]="'POC Button'"></button>
+<div class="d-flex gap-2">
+    <button bBtn [label]="'POC Button'"></button>
+    <button bBtn class="success" [label]="'POC Button'"></button>
+    <button bBtn class="error" [label]="'POC Button'"></button>
+</div>
 
+<app-card>
+    <ng-container card-title>Card Title</ng-container>
+    <ng-container card-body>Card Body</ng-container>
+    <ng-container card-footer>Card Footer</ng-container>
+</app-card>
 <router-outlet></router-outlet>

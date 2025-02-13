@@ -21,23 +21,23 @@
     }
 
     &.success {  
-        background: #4CAF50; 
-        border-color: #4CAF50; 
+        background: #029106; 
+        border-color: #029106; 
         color: #fff; 
         &:hover { 
-            border-color: #4CAF50;
-            color: #4CAF50;
+            border-color: #029106;
+            color: #029106;
             background: #fff;
         }
     }
     &.error { 
-        background: #F44336; 
-        border-color: #F44336; 
+        background: #ac0d01; 
+        border-color: #ac0d01; 
         color: #fff; 
 
         &:hover { 
-            border-color: #F44336;
-            color: #F44336;
+            border-color: #ac0d01;
+            color: #ac0d01;
             background: #fff;
         }
     }
