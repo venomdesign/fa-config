@@ -1,0 +1,20 @@
+details {
+    border: 1px solid #e0e0e0;
+    border-width: 1px 0;
+    padding: 1rem;
+
+    summary {
+        font-size: 1.5rem; color: #005288; display: flex; align-items: center;  
+        &::before { 
+            content: "^"; 
+            margin-right: 0.5rem; 
+            
+        }
+        &[open] { 
+            &::before { 
+                transform: rotate(180deg);
+            }
+    
+        }
+    }
+}

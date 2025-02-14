@@ -1,15 +1,46 @@
+<div class="d-flex flex-column mn-vh-100 justify-content-start gap-4">
+    <app-header></app-header>
+    <div class="d-flex gap-4">
+        <app-sidenav style="width: 80px"></app-sidenav>
+        <app-content class="d-flex flex-column gap-4">
+            <app-page-header>
+                <!-- title
+                name/title
+                avatar name/title
+                name/title avatar -->
 
-<app-example></app-example>
+                <ng-container avatar-left>
+                    <div class="border border-white border-5 rounded-circle bg-dark d-flex align-items-center justify-content-center" style="width: 56px; height: 56px; box-sizing: border-box;">AV</div>
+                </ng-container>
+                <ng-container header-title>Title/Name</ng-container>
+                <ng-container header-subtitle>Subtitle</ng-container>
 
-<div class="d-flex gap-2">
-    <button bBtn [label]="'POC Button'"></button>
-    <button bBtn class="success" [label]="'POC Button'"></button>
-    <button bBtn class="error" [label]="'POC Button'"></button>
+                <ng-container header-right-title>Name</ng-container>
+                <ng-container header-right-subtitle>Title</ng-container>
+                <ng-container avatar-right>
+                    <div class="border border-white border-5 rounded-circle bg-dark d-flex align-items-center justify-content-center" style="width: 56px; height: 56px; box-sizing: border-box;">AV</div>
+                </ng-container>
+              </app-page-header>
+            <app-example></app-example>
+
+            <div class="d-flex gap-2">
+                <button bBtn [label]="'POC Button'"></button>
+                <button bBtn class="success" [label]="'POC Button'"></button>
+                <button bBtn class="error" [label]="'POC Button'"></button>
+            </div>
+            
+            <app-card>
+                <h5 card-title>Card Title</h5>
+                <ng-container card-body>Card Body</ng-container>
+                <ng-container card-footer><button bBtn class="success" [label]="'POC Button'"></button></ng-container>
+            </app-card>
+            
+            <accordion [accordionTitle]="'Accordion Title'" [accordionType]="'default'"></accordion>
+
+
+        </app-content>
+    </div>
+    <app-footer class="mt-auto"></app-footer>
 </div>
 
-<app-card>
-    <ng-container card-title>Card Title</ng-container>
-    <ng-container card-body>Card Body</ng-container>
-    <ng-container card-footer>Card Footer</ng-container>
-</app-card>
 <router-outlet></router-outlet>
