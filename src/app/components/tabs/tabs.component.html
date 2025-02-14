@@ -1,1 +1,13 @@
-<p>tabs works!</p>
+<div class="tabs">
+    <ul class="nav nav-tabs">
+      <li class="nav-item" *ngFor="let tab of tabs">
+        <a class="nav-link" 
+           [class.active]="tab.active" 
+           (click)="selectTab(tab)">
+          <fa-icon [icon]="tab.tabIcon"></fa-icon> {{ tab.tabTitle }}
+        </a>
+      </li>
+    </ul>
+    <ng-content></ng-content>
+  </div>
+  

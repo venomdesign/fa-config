@@ -37,8 +37,25 @@
             
             <accordion [accordionTitle]="'Accordion Title'" [accordionType]="'default'"></accordion>
 
-
-        </app-content>
+            <app-tabs>
+                <app-tab tabTitle="Home" tabIcon="fas fa-home" [active]="true">
+                  <ng-template>
+                    <div class="tab-content">Home Content</div>
+                  </ng-template>
+                </app-tab>
+                <app-tab tabTitle="Profile" tabIcon="fas fa-user">
+                  <ng-template>
+                    <div class="tab-content">Profile Content</div>
+                  </ng-template>
+                </app-tab>
+                <app-tab tabTitle="Settings" tabIcon="fas fa-cog">
+                  <ng-template>
+                    <div class="tab-content">Settings Content</div>
+                  </ng-template>
+                </app-tab>
+              </app-tabs>
+              
+        </app-content><br><br><Br>
     </div>
     <app-footer class="mt-auto"></app-footer>
 </div>
